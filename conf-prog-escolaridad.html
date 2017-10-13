@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <meta content="MetLife" property="Title">
+    <meta content="Programa de Seguros Voluntarios 2016" property="Description">
+    <title>MetLife > Programa de Seguros Voluntarios 2016</title>
+    <link href="http://fonts.googleapis.com/css?family=Norican" rel="stylesheet">
+    <link href="styles/all.css" rel="stylesheet">
+    <link href="styles/general.css" rel="stylesheet">
+    <script src="javascripts/modernizr.custom.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <header class="top-page">
+      <div class="container">
+        <div class="logo-metlife">
+          <img alt="MetLife" src="images/MetLogo.gif">
+        </div>
+        <div class="logo-corredor">
+          <img alt="Komatsu" src="images/logo-komatsu.png">
+        </div>
+      </div>
+    </header>
+    <section class="top-content">
+      <div class="container">
+        <h2 class="main-title">
+          Programa de Seguros Voluntarios 2016
+        </h2>
+      </div>
+    </section>
+    <section class="medium-content">
+      <div class="container">
+        <div class="forms section">
+          <h5 class="title-table">
+            Beneficiarios del Seguro Complementario Padres
+          </h5>
+          <table class="table-hover">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>RUT</th>
+                <th>Fecha de nacimiento</th>
+                <th>Parentesco</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Oscar Alfaro Silva</td>
+                <td>7.948.939-3</td>
+                <td>12//11/1952</td>
+                <td>Padre</td>
+              </tr>
+              <tr>
+                <td>María Guerrero Pizarro</td>
+                <td>8.838.838-1</td>
+                <td>12//11/1958</td>
+                <td>Madre</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="forms section">
+          <h5 class="title-table">
+            Configure su seguro de Escolaridad
+          </h5>
+          <div class="divider"></div>
+          <h6>
+            Seleccione un plan
+          </h6>
+          <table class="table-hover table-striped">
+            <tbody>
+              <tr>
+                <td>
+                  <input checked="checked" class="with-gap" id="plan1" name="group1" type="radio">
+                  <label for="plan1"></label>
+                </td>
+                <td>Plan 1</td>
+                <td>
+                  <strong>UF 30</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="with-gap" id="plan2" name="group1" type="radio">
+                  <label for="plan2"></label>
+                </td>
+                <td>Plan 2</td>
+                <td>
+                  <strong>UF 60</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="with-gap" id="plan3" name="group1" type="radio">
+                  <label for="plan3"></label>
+                </td>
+                <td>Plan 3</td>
+                <td>
+                  <strong>UF 100</strong>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="divider"></div>
+        <div class="forms section">
+          <h6>
+            Cargas del Seguro
+          </h6>
+          <p>Detalla las cargas que se incorporarán al seguro</p>
+          <table class="table-hover responsive-table striped invisible" id="add-person-table">
+            <thead>
+              <tr>
+                <th>Nombres</th>
+                <th>Apellido Paterno</th>
+                <th>Apellido Materno</th>
+                <th>RUT</th>
+                <th>Parentesco</th>
+                <th>Fecha de nacimiento</th>
+                <th>Capital</th>
+                <th>&nbsp;</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <div class="divider"></div>
+          <form>
+            <section>
+              <div class="forms section invisible" id="add-person-form">
+                <h6 class="subtitle">
+                  Agregar una carga
+                </h6>
+                <div class="section">
+                  <div class="row">
+                    <div class="input-field col-sm-6">
+                      <input class="validate" id="names" type="text">
+                      <label for="names">Nombres</label>
+                      <i class="form-control-feedback"></i>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col-sm-6">
+                      <input class="validate" id="paterno" type="text">
+                      <label for="paterno">Apellido Paterno</label>
+                      <i class="form-control-feedback"></i>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col-sm-6">
+                      <input class="validate" id="materno" type="text">
+                      <label for="materno">Apellido Materno</label>
+                      <i class="form-control-feedback"></i>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col-sm-4">
+                      <input class="validate" id="rut-carga" type="text">
+                      <label for="rut-carga">RUT</label>
+                      <i class="form-control-feedback"></i>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col-sm-3">
+                      <input class="datepicker" id="date" type="date">
+                      <label for="date">Fecha de Naciemiento</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field selects col-sm-3">
+                      <label>Parentesco</label>
+                      <select class="browser-default" id="relacion">
+                        <option disabled="disabled" selected="selected" value="">Seleccione una relación</option>
+                        <option value="1">Padre</option>
+                        <option value="2">Madre</option>
+                        <option value="3">Hijo(a)</option>
+                        <option value="4">Cónyuge</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col-sm-4">
+                      <input class="validate" id="capital" type="text">
+                      <label for="capital">% Capital</label>
+                      <i class="form-control-feedback"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom-action left">
+                <a class="waves-effect btn btn-success btn-sm" href="#" id="add-person-button" title="Más información">
+                  Agregar
+                </a>
+                <a class="btn-flat btn-sm invisible" id="cancel-person-button">
+                  Cancelar
+                </a>
+              </div>
+            </section>
+          </form>
+        </div>
+        <div class="forms">
+          <div class="bottom-action">
+            <a class="btn-flat" href="datos-basicos.html" title="Cancelar">
+              Atrás
+            </a>
+            <a class="waves-effect btn btn-primary disabled" href="resumen.html" title="Siguiente">
+              Siguiente
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="links">
+          Copyright © 2016 MetLife Chile Seguros de Vida S.A. - Todos los derechos reservados.
+        </div>
+        <div class="copyright">
+          <a class="top-link" href="faq.html" title="Preguntas Frecuentes">
+            Preguntas Frecuentes
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="javascripts/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="javascripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="javascripts/materialize.min.js" type="text/javascript"></script>
+    <script src="javascripts/responsive-tabs.js" type="text/javascript"></script>
+    <script src="javascripts/custom.js" type="text/javascript"></script>
+  </body>
+</html>
